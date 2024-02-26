@@ -10,7 +10,7 @@ var axios = require('axios');
 
 // Load configuration information from system environment variables.
 var TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
-var TWILIO_ACCOUNT_SID =  process.env.TWILIO_AUTH_TOKEN;
+var TWILIO_AUTH_TOKEN =  process.env.TWILIO_AUTH_TOKEN;
 var TWILIO_PHONE_NUMBER = process.env.TWILIO_PHONE_NUMBER;
 var chatGPTApiKey = process.env.CHATGPT_API_KEY;
 var chatGPTApiEndpoint = 'https://api.openai.com/v1/chat/completions';
