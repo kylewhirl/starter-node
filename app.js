@@ -79,6 +79,9 @@ app.post('/incoming-sms', async (req, res) => {
     });
 
     console.log(`Sent reply to ${senderPhoneNumber}: ${chatGPTReply}`);
+
+    res.set('Content-Type','text/xml');
+    res.send("<Response></Response>");
     res.sendStatus(200);
   } catch (error) {
     console.error('Error processing message:', error.message);
