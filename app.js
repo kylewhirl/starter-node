@@ -82,7 +82,6 @@ app.post('/incoming-sms', async (req, res) => {
 
     res.set('Content-Type','text/xml');
     res.send("<Response></Response>");
-    res.sendStatus(200);
   } catch (error) {
     console.error('Error processing message:', error.message);
     res.sendStatus(500);
